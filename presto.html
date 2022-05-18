@@ -26,7 +26,7 @@
     <header id="headerContainerFluid" class="container-fluid back-main pb-3">
         <div id="headerRow" class="row pt-3 h-100 align-items-center">
             <div class="col-6 col-md-3">
-                <a id="logoText" class="navbar-brand ms-4 customBlack" href="#">Presto<span id="dotSpan" class="secColor">.</span>it</a>
+                <a id="logoText" class="navbar-brand ms-4 customBlack" href="#"><span id="pSpan" class="secColor">P</span>resto<span id="dotSpan" class="secColor">.</span>it</a>
             </div>
             <div class="d-none d-md-flex col-md-6">
                 <form class="d-flex w-100">
@@ -34,28 +34,33 @@
                     <button id="searchBtn" class="btn ms-0 back-sec" type="submit">Search</button>
                 </form>
             </div>
-            <div class="col-6 col-md-4 d-flex justify-content-center d-md-none">
-                <div class="cartAndWishlist mx-3">
+            <div class="col-6 col-md-4 d-flex justify-content-evenly align-items-center d-md-none px-0">
+                <div class="cartAndWishlist mx-1">
                     <div class="col-12 text-center">
                         <i class="fa-regular fa-heart"></i>
                         <p class="cartAndWishlistP">Your Wishlist</p>
                     </div>
                 </div>
-                <div class="cartAndWishlist mx-3">
+                <div class="cartAndWishlist mx-1">
                     <div class="col-12 text-center">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <p class="cartAndWishlistP">Your Cart</p>
                     </div>
                 </div>
+                <div class="mx-3">
+                    <button id="navbarExpander" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i id="arrowNavbar" class="fa-solid fa-circle-arrow-down"></i></span>
+                    </button>
+                </div>
             </div>
-            <div class="col-12 col-md-3 d-flex justify-content-center d-none d-md-flex">
-                <div class="cartAndWishlist mx-3">
+            <div class="col-12 col-md-3 d-flex justify-content-evenly d-none d-md-flex">
+                <div class="cartAndWishlist mx-1">
                     <div class="col-12 text-center">
                         <i class="fa-regular fa-heart"></i>
                         <p class="cartAndWishlistP">Your Wishlist</p>
                     </div>
                 </div>
-                <div class="cartAndWishlist mx-3">
+                <div class="cartAndWishlist mx-1">
                     <div class="col-12 text-center">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <p class="cartAndWishlistP">Your Cart</p>
@@ -69,24 +74,38 @@
                 <button id="searchBtn" class="btn ms-0 back-sec" type="submit">Search</button>
             </form>
         </div>
-        <!-- <div class="col-12 col-md-4">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-        </div> -->
-        <div class="row">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul id="ulNav" class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active customBlack" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link customBlack" href="#">Link</a>
-                  </li>
-                </ul>
-              </div>
-        </div>
     </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light container-fluid back-main">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hot Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Laptops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Smartphones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
