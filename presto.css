@@ -1,0 +1,85 @@
+:root{
+    --main-color: #B2EDC5;
+    --sec-color: #FFB800;
+    --custom-black: rgba(0, 0, 0, 0.834);
+}
+
+.mainColor{
+    color: var(--main-color)
+}
+
+.secColor{
+    color: var(--sec-color);
+}
+
+.customBlack{
+    color: var(--custom-black)!important;
+}
+
+.back-main{
+    background-color: var(--main-color);
+}
+
+.back-sec{
+    background-color: var(--sec-color);
+}
+
+.navbar-toggler{
+    border-style: none!important;
+}
+
+.rotateArrow{
+    transform: rotate(180deg);
+}
+
+.cartAndWishlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-item{
+    text-align: center!important;
+}
+
+.cartAndWishlistP{
+    margin-bottom: 0px;
+}
+
+#dotSpan{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 50px;
+}
+
+#logoText, #logoText span{
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBar{
+    border-radius: 20px 0px 0px 20px;
+    border-color: var(--sec-color);
+}
+
+#searchBtn{
+    border-radius: 0px 20px 20px 0px;
+}
+
+#ulNav{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    #logoText, #logoText span{
+        justify-content: flex-start;
+    }
+
+    .headerRow{
+        justify-content: space-between;
+    }
+}
