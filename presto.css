@@ -1,7 +1,7 @@
 :root{
     --main-color: #B2EDC5;
     --sec-color: #FFB800;
-    --custom-black: rgba(0, 0, 0, 0.834);
+    --custom-black: #000000d5;
 }
 
 .mainColor{
@@ -41,6 +41,7 @@
 
 .nav-item{
     text-align: center!important;
+    padding: 0px 5px;
 }
 
 .cartAndWishlistP{
@@ -62,12 +63,19 @@ li a.active:after {
     left: 0;
     right: 0;
     background-color: var(--sec-color);
-    left: 0;
     bottom: 3px; /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
 }
 
 a.nav-link{
     color: var(--custom-black)!important;
+}
+
+a.nav-link:hover{
+    color: var(--sec-color)!important;
+}
+
+#headerRow{
+    height: 120px;
 }
 
 #pSpan{
@@ -106,12 +114,74 @@ a.nav-link{
     font-weight: 500;
 }
 
+/* Categories section */
+.categoriesCards{
+    box-shadow: 2px 2px 2px var(--custom-black);
+    height: 250px;
+    width: 100%;
+    max-width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.textCategories{
+    z-index: 1;
+    position: absolute;
+    top: 8%;
+}
+
+.bgCategories{
+    background-color: var(--sec-color);
+    opacity: 0.7;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    padding: 200px;
+}
+
+.categoriesCard1{
+    background-image: url('https://technext.github.io/electro/img/shop01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
+.categoriesCard2{
+    background-image: url('https://technext.github.io/electro/img/shop03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
+.categoriesCard3{
+    background-image: url('https://technext.github.io/electro/img/shop02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
+.categoriesCard4{
+    background-image: url('https://www.mondoaffariweb.it/media/catalog/product/cache/1/image/600x400/9df78eab33525d08d6e5fb8d27136e95/s/1/s10_prism_green.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
+
+.shopBtn{
+    border-radius: 10px;
+    border-style: none;
+    background-color: transparent;
+    font-weight: 500;
+}
+
 @media screen and (min-width: 768px) {
     #logoText, #logoText span{
         justify-content: flex-start;
     }
 
-    .headerRow{
-        justify-content: space-between;
+    #headerRow{
+        height: 100px;
     }
 }
