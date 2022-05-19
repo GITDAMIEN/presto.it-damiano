@@ -30,6 +30,12 @@
 
 .rotateArrow{
     transform: rotate(180deg);
+    transition: 0.4s;
+}
+
+.noRotate{
+    transform: rotate(0deg);
+    transition: 0.4s;
 }
 
 .cartAndWishlist{
@@ -48,12 +54,22 @@
     margin-bottom: 0px;
 }
 
+.form-control:focus, .btn:focus, .navbar-toggler:focus{
+    box-shadow: none!important;
+}
+
 li a.active{
-    color: var(--sec-color)!important;
+    color: var(--custom-black)!important;
     position: relative; 
     transform: scale(1.2);
     transition: 0.3s;
+    font-weight: 450;
+    text-shadow: -0.5px 0 var(--sec-color), 0 0px var(--sec-color), 0px 0 var(--sec-color), 0 -0.5px var(--sec-color);
 }
+/* 
+li a.active:hover{
+    font-weight: 450;
+} */
 
 li a.active:after {
     position: absolute;
@@ -72,6 +88,7 @@ a.nav-link{
 
 a.nav-link:hover{
     color: var(--sec-color)!important;
+    transform: scale(1.2);
 }
 
 #headerRow{
@@ -94,14 +111,17 @@ a.nav-link:hover{
 
 #logoText, #logoText span{
     font-weight: 600;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 35px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-#searchBar{
+.ubuntuFont{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#searchBar, #searchBar2{
     border-radius: 20px 0px 0px 20px;
     border-color: var(--sec-color);
 }
@@ -174,13 +194,10 @@ a.nav-link:hover{
     border-style: none;
     background-color: transparent;
     font-weight: 500;
+    padding-left: 0;
 }
 
 @media screen and (min-width: 768px) {
-    #logoText, #logoText span{
-        justify-content: flex-start;
-    }
-
     #headerRow{
         height: 100px;
     }
