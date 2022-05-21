@@ -1,6 +1,6 @@
 
 //Problems to be solved
-// 1- heart gets covered by its background after click (??)
+// 1- hearts not working (fetch creates them and gets executed after the querySelectorAll)
 // 2- add an initial section with a quick website description
 
 //Query selectors
@@ -13,9 +13,61 @@ const heartBtn = document.querySelectorAll('#heartBtn')
 const cartBtn = document.querySelectorAll('#cartBtn')
 const categoriesText = document.querySelector('#categoriesText')
 const easterEggToastMessage = document.querySelector('#easterEggToastMessage')
+const newAdsWrapper = document.querySelector('#newAdsWrapper')
 
 // Variables
 var easterEggCounter = 0;
+
+//Fetch
+fetch('./annunci.json')
+.then(response=>response.json())
+.then(data=>{
+
+    let newAds = [];
+
+    data.forEach((obj,i)=>{
+        if(i>=(data.length-10))
+            newAds.push(obj)
+    })
+
+    console.log(newAds);
+
+    // newAdsWrapper.innerHTML=''        // RIATTIVARE !!
+
+    newAds.forEach(newAd=>{
+
+        let slide = document.createElement('div')
+        slide.classList.add('swiper-slide')
+        slide.innerHTML=`
+            <div class="card d-flex align-items-center productCard" style="width: 18rem;">
+                <span class="badge typeBadge ${newAd.type == 'sell' ? 'back-colorRed' : 'back-colorGreen'}">${newAd.type == 'sell' ? 'Selling' : 'Searching'}</span>
+                <span class="badge newBadge">NEW</span>
+                <img class="card-img-top" src="https://technext.github.io/electro/img/shop01.png" alt="Immagine smartphone">
+                <div class="card-body py-1">
+                    <p class="card-title productCategory text-center mt-3">${newAd.category}</p>
+                    <a href="#"><p class="card-text productName text-center">${newAd.name}</p></a>
+                    <p class="text-center secColor fw-bold fs-5 mt-2 mb-0">${newAd.price} $</p>
+                </div>
+                <div class="row mb-2 py-2 w-100 justify-content-around">
+                    <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                        <button id="heartBtn" class="">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                        <button id="cartBtn" class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `
+        
+        newAdsWrapper.appendChild(slide)
+    })
+
+
+})
 
 //Swiper
 const swiper = new Swiper('.swiper', {
@@ -72,8 +124,6 @@ navLink.forEach(link => {
     })
 })
 
-console.log(navLink);
-
 searchBar.addEventListener('click', ()=>{
     console.log('ciaoooo sono la searchBar 1');
 })
@@ -83,23 +133,10 @@ searchBar2.addEventListener('click', ()=>{
 })
 
 heartBtn.forEach(btn=>{
-    btn.addEventListener('mouseenter', ()=>{
-        btn.innerHTML=''
-        btn.innerHTML=`<i class="fa-solid fa-heart"></i>`
-    })  
-})
-
-heartBtn.forEach(btn=>{
-    btn.addEventListener('mouseleave', ()=>{
-        btn.innerHTML=''
-        btn.innerHTML=`<i class="fa-regular fa-heart"></i>`
-    })  
-})
-
-heartBtn.forEach(btn=>{
     btn.addEventListener('click', ()=>{
         btn.classList.toggle('back-sec')
-    })  
+        btn.children[0].classList.toggle('colorWhite')
+    })
 })
 
 //Functions
