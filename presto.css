@@ -160,18 +160,15 @@ a.nav-link:hover{
     overflow: hidden;
     z-index: 1500;
 }
-/* 
+
 #navbarContainerFluid{
-    position: relative;
+    position: sticky;
     top: 100px;
-} */
+    overflow: hidden;
+    z-index: -5;
+}
 
 /* Categories section */
-/* 
-#categoriesSectionContainerFluid{
-    position: relative;
-    top: 100px;
-} */
 
 .categoriesCards{
     box-shadow: 2px 2px 2px var(--custom-black);
@@ -412,6 +409,14 @@ a.nav-link:hover{
 }
 
 /* Media query */
+
+
+@media screen and (min-width: 768px){
+
+    #navbarContainerFluid{
+        z-index: 1500;
+    }
+}
 
 @media screen and (min-width: 1200px){
     .categoriesCards{
