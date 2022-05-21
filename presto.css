@@ -93,10 +93,6 @@ li a.active{
     font-weight: 450;
     text-shadow: -0.5px 0 var(--sec-color), 0 0px var(--sec-color), 0px 0 var(--sec-color), 0 -0.5px var(--sec-color);
 }
-/* 
-li a.active:hover{
-    font-weight: 450;
-} */
 
 li a.active:after {
     position: absolute;
@@ -179,6 +175,60 @@ a.nav-link:hover{
     overflow: hidden;
     z-index: -5;
 }
+
+/* Post your ad */
+
+#postYourAdBanner{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2000;
+    transition: all 0.2s;
+}
+
+#postYourAdBanner:hover{
+    transform: scale(1.2);
+}
+
+#postYourAdBtn > #postYourAdIcon{
+    transition: 0.4s;
+}
+
+#postYourAdBanner:hover > #postYourAdBtn > #postYourAdIcon{
+    transform: rotate(270deg) scale(1.8);
+}
+
+#postYourAdWords{
+    border-radius: 30px 0px 0px 30px;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    color: var(--custom-black)!important;
+    border-style: none;
+    margin: 0;
+    padding: 3px 6px;
+    width: max-content;
+}
+
+#postYourAdBtn{
+    background-color: var(--sec-color);
+    border-style: none;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#postYourAdIcon{
+    width: 22px;
+    height: 22px;
+}
+
 
 /* Categories section */
 
