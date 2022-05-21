@@ -230,6 +230,35 @@ a.nav-link:hover{
 }
 
 
+/* Presentation section (experiments) */
+/* 
+#presentationSection{
+    position: relative;
+    height: 90vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+#presentationSection video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    z-index: 0;
+    -webkit-transform: translateX(-50%) translateY(-20%);ù
+}
+
+#presentationSection .container {
+    position: relative;
+    min-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+    background: linear-gradient(to bottom, var(--main-color) 2%, transparent 10%, transparent 20%, transparent 95%, var(--main-color) 100%);
+} */
+
+
 /* Categories section */
 
 .categoriesCards{
