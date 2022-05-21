@@ -1,43 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    
     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
+    
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     
     <!-- My CSS -->
     <link rel="stylesheet" href="./presto.css">
     <title>Presto.it</title>
-  </head>
-  <body>
-
+    <link rel="shortcut icon" href="./media/p.png" type="image/x-icon">
+</head>
+<body>
+    
     <!-- Sito template -->
     <!-- https://technext.github.io/electro/ -->
-
+    
     <!-- Header -->
     <header id="headerContainerFluid" class="container-fluid back-main">
         <div id="headerRow" class="row align-items-center">
             <div class="col-6 col-md-3">
-                <a id="logoText" class="navbar-brand ms-4 customBlack ubuntuFont" href="#"><span id="pSpan" class="secColor">P</span>resto<span id="dotSpan" class="secColor ubuntuFont">.</span>it</a>
+                <a id="logoText" class="navbar-brand ms-4 customBlack ubuntuFont" href="./presto.html"><span id="pSpan" class="secColor">P</span>resto<span id="dotSpan" class="secColor ubuntuFont">.</span>it</a>
             </div>
             <div class="d-none d-md-flex col-md-6">
                 <form class="d-flex w-100">
                     <input id="searchBar" class="form-control me-0" type="search" placeholder="Search here" aria-label="Search">
-                    <button id="searchBtn" class="btn ms-0 back-sec" type="submit">Search</button>
+                    <button id="searchBtn" class="btn ms-0 back-sec" type="submit"><span>Search</span></button>
                 </form>
             </div>
             <div class="col-6 col-md-4 d-flex justify-content-evenly align-items-center d-md-none px-0">
@@ -81,9 +85,9 @@
             </form>
         </div>
     </header>
-
+    
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light container-fluid back-main">
+    <nav class="navbar navbar-expand-md navbar-light container-fluid back-main pb-3">
         <div class="container">
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-md-0">
@@ -112,19 +116,19 @@
             </div>
         </div>
     </nav>
-
-
+    
+    
     <!-- Categories section -->
-    <section class="container-fluid pb-5">
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 my-4 ms-5">
+    <section class="container-fluid pb-3">
+        <div class="container mb-5 mt-3">
+            <div class="row justify-content-center">
+                <div class="col-12 my-4">
                     <h2 class="customBlack ubuntuFont fw-bold text-center">CATEGORIES</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-6 col-lg-3 mx-0 px-0 d-flex justify-content-center">
-                    <div class="card categoriesCards categoriesCard1">
+                    <div class="categoriesCards categoriesCard1">
                         <div class="bgCategories">
                         </div>
                         <div class="p-3 textCategories">
@@ -134,7 +138,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 mx-0 px-0 d-flex justify-content-center">
-                    <div class="card categoriesCards categoriesCard2">
+                    <div class="categoriesCards categoriesCard2">
                         <div class="bgCategories">
                         </div>
                         <div class="p-3 textCategories">
@@ -144,7 +148,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 mx-0 px-0 d-flex justify-content-center">
-                    <div class="card categoriesCards categoriesCard3">
+                    <div class="categoriesCards categoriesCard3">
                         <div class="bgCategories">
                         </div>
                         <div class="p-3 textCategories">
@@ -154,7 +158,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 mx-0 px-0 d-flex justify-content-center">
-                    <div class="card categoriesCards categoriesCard4">
+                    <div class="categoriesCards categoriesCard4">
                         <div class="bgCategories">
                         </div>
                         <div class="p-3 textCategories">
@@ -166,57 +170,195 @@
             </div>
         </div>
     </section>
-
+    
     <!-- New ads -->
-    <section class="container-fluid back-main text-center">
+    <section class="container-fluid back-main text-center pt-3">
         <div class="container">
-            <div class="row">
-                <div class="col-12 my-4 ms-5">
+            <div class="row justify-content-center">
+                <div class="col-12 my-4">
                     <h2 class="customBlack ubuntuFont fw-bold">NEW ADS</h2>
                 </div>
             </div>
             <div class="row mt-3">
-                <div class="col-3 card d-flex align-items-center productCard mx-3 shadow" style="width: 18rem;">
+                <div class="col-3 card d-flex align-items-center productCard m-3" style="width: 18rem;">
                     <img class="card-img-top" src="https://technext.github.io/electro/img/shop01.png" alt="Immagine smartphone">
-                    <div class="card-body">
-                        <p class="card-title productCategory text-center">CATEGORY</p>
+                    <div class="card-body py-1">
+                        <p class="card-title productCategory text-center mt-3">CATEGORY</p>
                         <a href="#"><p class="card-text productName text-center">PRODUCT NAME</p></a>
+                        <p class="text-center secColor fw-bold fs-5 mt-2 mb-0">150 $</p>
+                    </div>
+                    <div class="row mb-2 py-2 w-100 justify-content-around">
+                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                            <button id="heartBtn" class="productBtns">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                            <button id="cartBtn" class="productBtns">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
+            <div class="row my-3">
+                <div class="col-12">
+                    <!-- Slider main container -->
+                    <div class="swiper py-3">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="card d-flex align-items-center productCard" style="width: 18rem;">
+                                    <img class="card-img-top" src="https://technext.github.io/electro/img/shop01.png" alt="Immagine smartphone">
+                                    <div class="card-body py-1">
+                                        <p class="card-title productCategory text-center mt-3">CATEGORY</p>
+                                        <a href="#"><p class="card-text productName text-center">PRODUCT NAME</p></a>
+                                        <p class="text-center secColor fw-bold fs-5 mt-2 mb-0">150 $</p>
+                                    </div>
+                                    <div class="row mb-2 py-2 w-100 justify-content-around">
+                                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                            <button id="heartBtn" class="productBtns">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                            <button id="cartBtn" class="productBtns">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex align-items-center productCard" style="width: 18rem;">
+                                    <img class="card-img-top" src="https://technext.github.io/electro/img/shop01.png" alt="Immagine smartphone">
+                                    <div class="card-body py-1">
+                                        <p class="card-title productCategory text-center mt-3">CATEGORY</p>
+                                        <a href="#"><p class="card-text productName text-center">PRODUCT NAME</p></a>
+                                        <p class="text-center secColor fw-bold fs-5 mt-2 mb-0">150 $</p>
+                                    </div>
+                                    <div class="row mb-2 py-2 w-100 justify-content-around">
+                                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                            <button id="heartBtn" class="productBtns">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                            <button id="cartBtn" class="productBtns">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex align-items-center productCard" style="width: 18rem;">
+                                    <img class="card-img-top" src="https://technext.github.io/electro/img/shop01.png" alt="Immagine smartphone">
+                                    <div class="card-body py-1">
+                                        <p class="card-title productCategory text-center mt-3">CATEGORY</p>
+                                        <a href="#"><p class="card-text productName text-center">PRODUCT NAME</p></a>
+                                        <p class="text-center secColor fw-bold fs-5 mt-2 mb-0">150 $</p>
+                                    </div>
+                                    <div class="row mb-2 py-2 w-100 justify-content-around">
+                                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                            <button id="heartBtn" class="productBtns">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                            <button id="cartBtn" class="productBtns">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex align-items-center productCard" style="width: 18rem;">
+                                    <img class="card-img-top" src="https://technext.github.io/electro/img/shop01.png" alt="Immagine smartphone">
+                                    <div class="card-body py-1">
+                                        <p class="card-title productCategory text-center mt-3">CATEGORY</p>
+                                        <a href="#"><p class="card-text productName text-center">PRODUCT NAME</p></a>
+                                        <p class="text-center secColor fw-bold fs-5 mt-2 mb-0">150 $</p>
+                                    </div>
+                                    <div class="row mb-2 py-2 w-100 justify-content-around">
+                                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                            <button id="heartBtn" class="productBtns">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                            <button id="cartBtn" class="productBtns">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev d-none d-lg-flex"></div>
+                        <div class="swiper-button-next d-none d-lg-flex"></div>
+                        
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </div>
     </section>
-
-
+    
+    
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    
     <!-- Swiper Js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
 
-    <!-- Mio Js -->
-    <script src="./presto.js"></script>
-  </body>
-</html>
+            //breakpoints
+            breakpoints: {
+                700: {
+                    slidesPerView: 2,
+                    // spaceBetween: 20,
+                },
+                900: {
+                    slidesPerView: 3,
+                    // spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    // spaceBetween: 50,
+                },
+            }
+            
+            // And if we need scrollbar
+            // scrollbar: {
+                //     el: '.swiper-scrollbar',
+                // },
+        });
+    </script>
+        
+        <!-- My Js -->
+        <script src="./presto.js"></script>
+    </body>
+    </html>
