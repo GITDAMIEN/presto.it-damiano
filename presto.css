@@ -1,3 +1,6 @@
+
+/* General */
+
 :root{
     --main-color: #B2EDC5;
     --sec-color: #FFB800;
@@ -27,6 +30,9 @@ a{
 .back-sec{
     background-color: var(--sec-color)!important;
 }
+
+
+/* Header and Navbar */
 
 .navbar-toggler{
     border-style: none!important;
@@ -101,7 +107,7 @@ a.nav-link:hover{
 }
 
 #headerRow{
-    height: 120px;
+    height: 100px;
 }
 
 #pSpan{
@@ -140,7 +146,6 @@ a.nav-link:hover{
     transition: 0.2s;
 }
 
-
 #searchBtn:hover{
     transform: scale(1.1);
 }
@@ -149,8 +154,25 @@ a.nav-link:hover{
     font-weight: 500;
 }
 
+#headerContainerFluid{
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1500;
+}
+/* 
+#navbarContainerFluid{
+    position: relative;
+    top: 100px;
+} */
 
 /* Categories section */
+/* 
+#categoriesSectionContainerFluid{
+    position: relative;
+    top: 100px;
+} */
+
 .categoriesCards{
     box-shadow: 2px 2px 2px var(--custom-black);
     height: 250px;
@@ -390,12 +412,6 @@ a.nav-link:hover{
 }
 
 /* Media query */
-
-@media screen and (min-width: 768px) {
-    #headerRow{
-        height: 100px;
-    }
-}
 
 @media screen and (min-width: 1200px){
     .categoriesCards{

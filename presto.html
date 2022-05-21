@@ -33,10 +33,10 @@
     <!-- https://technext.github.io/electro/ -->
     
     <!-- Header -->
-    <header id="headerContainerFluid" class="container-fluid back-main">
+    <header id="headerContainerFluid" class="fixed-top container-fluid back-main">
         <div id="headerRow" class="row align-items-center">
             <div class="col-6 col-md-3">
-                <a id="logoText" class="navbar-brand ms-4 customBlack ubuntuFont" href="./presto.html"><span id="pSpan" class="secColor">P</span>resto<span id="dotSpan" class="secColor ubuntuFont">.</span>it</a>
+                <a id="logoText" class="py-0 navbar-brand ms-4 customBlack ubuntuFont" href="./presto.html"><span id="pSpan" class="secColor">P</span>resto<span id="dotSpan" class="secColor ubuntuFont">.</span>it</a>
             </div>
             <div class="d-none d-md-flex col-md-6">
                 <form class="d-flex w-100">
@@ -78,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-md-none col-md-4 d-flex align-items-center justify-content-center">
+        <div class="d-md-none col-md-4 d-flex align-items-center justify-content-center pb-2">
             <form class="d-flex mx-3 w-100">
                 <input id="searchBar2" class="form-control me-0" type="search" placeholder="Search here" aria-label="Search">
                 <button id="searchBtn" class="btn ms-0 back-sec" type="submit">Search</button>
@@ -87,7 +87,7 @@
     </header>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light container-fluid back-main pb-3">
+    <nav id="navbarContainerFluid" class="navbar navbar-expand-md navbar-light container-fluid back-main pb-3">
         <div class="container">
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-md-0">
@@ -116,7 +116,6 @@
             </div>
         </div>
     </nav>
-    
     
     <!-- Categories section -->
     <section id="categoriesSectionContainerFluid" class="container-fluid pb-3">
