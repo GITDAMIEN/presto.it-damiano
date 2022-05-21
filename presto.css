@@ -166,6 +166,10 @@ a.nav-link:hover{
     border-radius: 10px;
 }
 
+#categoriesSectionContainerFluid{
+    background-image: url(/media/Animated\ Shape\ \(1\).svg);
+}
+
 .categoriesCards:hover {
     transform: scale(1.15);
 }
@@ -193,29 +197,41 @@ a.nav-link:hover{
     padding: 200px;
 }
 
+.categoriesCardsBox{
+    background-color: white;
+}
+
 .categoriesCard1{
     background-image: url('https://technext.github.io/electro/img/shop01.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%;
+    width: 100%;
+    height: 100%;
 }
 .categoriesCard2{
     background-image: url('https://technext.github.io/electro/img/shop03.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%;
+    width: 100%;
+    height: 100%;
 }
 .categoriesCard3{
     background-image: url('https://technext.github.io/electro/img/shop02.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%;
+    width: 100%;
+    height: 100%;
 }
 .categoriesCard4{
     background-image: url('https://www.mondoaffariweb.it/media/catalog/product/cache/1/image/600x400/9df78eab33525d08d6e5fb8d27136e95/s/1/s10_prism_green.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%;
+    width: 100%;
+    height: 100%;
 }
 
 .shopBtn{
@@ -358,11 +374,19 @@ a.nav-link:hover{
     font-size: 20px;
     content: "\f0a8";
     color: var(--sec-color);
-    text-shadow: 1px 1px 4px var(--custom-black);
+    text-shadow: 1px 1px 3px var(--custom-black);
 }
 
 .swiper-pagination-bullet-active{
     background: var(--sec-color);
+}
+
+/* Easter Egg Toast message */
+#easterEggToastMessage{
+    position: fixed;
+    top: 34px;
+    right: 150px;
+    z-index: 9000;
 }
 
 /* Media query */
@@ -370,5 +394,11 @@ a.nav-link:hover{
 @media screen and (min-width: 768px) {
     #headerRow{
         height: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .categoriesCards{
+        height: 280px;
     }
 }
