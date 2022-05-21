@@ -2,6 +2,7 @@
 //Problems to be solved
 // 1- hearts not working (fetch creates them and gets executed after the querySelectorAll)
 // 2- add an initial section with a quick website description
+// 3- change PostYouAdBanner IntersectionObserver ? + add a nice effect
 
 //Query selectors
 const arrowNavbar = document.querySelector('#arrowNavbar')
@@ -14,9 +15,26 @@ const cartBtn = document.querySelectorAll('#cartBtn')
 const categoriesText = document.querySelector('#categoriesText')
 const easterEggToastMessage = document.querySelector('#easterEggToastMessage')
 const newAdsWrapper = document.querySelector('#newAdsWrapper')
+const newAdsRow = document.querySelector('#newAdsRow')
+const postYourAdBanner = document.querySelector('#postYourAdBanner')
 
 // Variables
 var easterEggCounter = 0;
+
+//Intersection observer for Post Your Ad
+let observer = new IntersectionObserver(
+    (elements)=>{
+        elements.forEach((element)=>{
+            if(element.isIntersecting){
+                postYourAdBanner.classList.remove('d-none')
+                postYourAdBanner.classList.add('d-flex')
+                postYourAdBanner.classList.add('show')
+            }
+        })
+    }
+)
+
+observer.observe(swiperRow)
 
 //Fetch
 fetch('./annunci.json')
