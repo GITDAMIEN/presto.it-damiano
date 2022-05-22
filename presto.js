@@ -5,7 +5,6 @@
 // 3- change PostYouAdBanner IntersectionObserver ? + add a nice effect
 // 4- fix rotation to icons in list items (footer)
 // 5- merge the searchbars if possible
-// 6- add a closing button to the PostYouAd banner
 
 //Query selectors
 const arrowNavbar = document.querySelector('#arrowNavbar')
