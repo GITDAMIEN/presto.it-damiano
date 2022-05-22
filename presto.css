@@ -78,6 +78,7 @@ a{
 }
 
 .cartAndWishlistP{
+    display: none;
     margin-bottom: 0px;
 }
 
@@ -120,12 +121,12 @@ a.nav-link:hover{
 
 #pSpan{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 70px!important;
+    font-size: 50px!important;
 }
 
 #dotSpan{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 #navvy{
@@ -134,7 +135,7 @@ a.nav-link:hover{
 
 #logoText, #logoText span{
     font-weight: 600;
-    font-size: 35px;
+    font-size: 26px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -519,6 +520,80 @@ a.nav-link:hover{
 }
 
 
+/* Footer */
+
+ul{
+    padding-left: 10px;
+}
+
+#mottoPDiv{
+    padding-left: 14px;
+}
+
+#footerLogoText, #footerLogoText span{
+    font-weight: 600;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 68px;
+}
+
+#footerPSpan{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 50px!important;
+}
+
+#footerDotSpan{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 36px;
+}
+
+#footerCategoriesTitle, #footerInfoTitle, #footerAppsLinksTitle{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#footerCategoriesList, #footerInfoList, #footerAppsLinks{
+    list-style: none;
+    padding-left: 16px;
+}
+
+#footerCategoriesListAnchor, #footerInfoListAnchor, #footerAppsLinksAnchor{
+    text-decoration: none!important;
+    color: var(--custom-black)!important;
+    transition: 0.2s;
+}
+
+#footerCategoriesListAnchor:hover, #footerInfoListAnchor:hover, #footerAppsLinksAnchor:hover{
+    color: var(--sec-color)!important;
+}
+
+.rotateIcon{
+    transition: 0.3s;
+}
+
+.rotateIcon:hover{
+    transform: rotate(360deg);
+}
+
+#footerCategoriesListItem #footerCategoriesListIcon{
+    transition: 0.3s;
+    text-shadow: 0px 0px 5px var(--custom-black);
+}
+
+#footerInfoListItem #footerInfoListIcon{
+    transition: 0.3s;
+    text-shadow: 0px 0px 5px var(--custom-black);
+}
+
+#footerCategoriesListItem:hover #footerCategoriesListIcon{
+    transform: rotate(360deg);
+}
+
+#footerInfoListItem:hover #footerInfoListIcon{
+    transform: rotate(360deg);
+}
+
 /* Easter Egg Toast message */
 #easterEggToastMessage{
     position: fixed;
@@ -529,6 +604,24 @@ a.nav-link:hover{
 
 /* Media query */
 
+@media screen and (min-width: 480px){
+    
+    .cartAndWishlistP{
+        display: block;
+    }
+
+    #logoText, #logoText span{
+        font-size: 35px;
+    }
+    
+    #pSpan{
+        font-size: 70px!important;
+    }
+
+    #dotSpan{
+        font-size: 50px;
+    }
+}
 
 @media screen and (min-width: 768px){
 

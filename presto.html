@@ -47,13 +47,13 @@
             <div class="col-6 col-md-4 d-flex justify-content-evenly align-items-center d-md-none px-0">
                 <div class="cartAndWishlist mx-1">
                     <div class="col-12 text-center">
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-heart" data-toggle="tooltip" data-placement="bottom" title="Your Wishlist"></i>
                         <p class="cartAndWishlistP">Your Wishlist</p>
                     </div>
                 </div>
                 <div class="cartAndWishlist mx-1">
                     <div class="col-12 text-center">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="bottom" title="Your Cart"></i>
                         <p class="cartAndWishlistP">Your Cart</p>
                     </div>
                 </div>
@@ -208,56 +208,137 @@
     
     <!-- New ads -->
     <section id="newAdsSectionContainerFluid" class="container-fluid back-main text-center py-3">
-        <divs class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 my-4">
-                    <h2 class="customBlack ubuntuFont fw-bold">NEW ADS</h2>
-                </div>
-            </div>
-            <!-- <div class="row mt-3 justify-content-center">
-                <div class="col-3 card d-flex align-items-center productCard m-3" style="width: 18rem;">
-                    <img class="card-img-top" src="https://technext.github.io/electro/img/shop01.png" alt="Immagine smartphone">
-                    <div class="card-body py-1">
-                        <p class="card-title productCategory text-center mt-3">CATEGORY</p>
-                        <a href="#"><p class="card-text productName text-center">PRODUCT NAME</p></a>
-                        <p class="text-center secColor fw-bold fs-5 mt-2 mb-0">150 $</p>
-                    </div>
-                    <div class="row mb-2 py-2 w-100 justify-content-around">
-                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
-                            <button id="heartBtn" class="productBtns">
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
-                        </div>
-                        <div class="col-3 p-0 d-flex justify-content-center align-items-center">
-                            <button id="cartBtn" class="productBtns">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                        </div>
+        <div class="container-fluid container-lg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 my-4">
+                        <h2 class="customBlack ubuntuFont fw-bold">NEW ADS</h2>
                     </div>
                 </div>
-            </div> -->
-            <div id="swiperRow" class="row mb-3 w-100">
-                <div class="col-12 p-0">
-                    <!-- Slider main container -->
-                    <div class="swiper px-3 pb-3">
-                        <!-- Additional required wrapper -->
-                        <div id="newAdsWrapper" class="swiper-wrapper">
-                            <!-- Slides -->
+                <!-- <div class="row mt-3 justify-content-center">
+                    <div class="col-3 card d-flex align-items-center productCard m-3" style="width: 18rem;">
+                        <img class="card-img-top" src="https://technext.github.io/electro/img/shop01.png" alt="Immagine smartphone">
+                        <div class="card-body py-1">
+                            <p class="card-title productCategory text-center mt-3">CATEGORY</p>
+                            <a href="#"><p class="card-text productName text-center">PRODUCT NAME</p></a>
+                            <p class="text-center secColor fw-bold fs-5 mt-2 mb-0">150 $</p>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                        
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev d-none d-lg-flex"></div>
-                        <div class="swiper-button-next d-none d-lg-flex"></div>
-                        
-                        <!-- If we need scrollbar -->
-                        <!-- <div class="swiper-scrollbar"></div> -->
+                        <div class="row mb-2 py-2 w-100 justify-content-around">
+                            <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                <button id="heartBtn" class="productBtns">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-3 p-0 d-flex justify-content-center align-items-center">
+                                <button id="cartBtn" class="productBtns">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div id="swiperRow" class="row mb-3 w-100">
+                    <div class="col-12 p-0">
+                        <!-- Slider main container -->
+                        <div class="swiper px-3 pb-3">
+                            <!-- Additional required wrapper -->
+                            <div id="newAdsWrapper" class="swiper-wrapper">
+                                <!-- Slides -->
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev d-none d-lg-flex"></div>
+                            <div class="swiper-button-next d-none d-lg-flex"></div>
+                            
+                            <!-- If we need scrollbar -->
+                            <!-- <div class="swiper-scrollbar"></div> -->
+                        </div>
                     </div>
                 </div>
-            </div>
-        </divs>
+            </div>       
+        </div>
     </section>
+
+    <!-- Footer  -->
+    <footer id="footerContainer" class="container-fluid back-main">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-6 col-md-4">
+                    <div class="row ps-3">
+                        <a id="footerLogoText" class="py-0 mt-3 customBlack ubuntuFont" href="./presto.html"><span id="footerPSpan" class="secColor">P</span>resto<span id="footerDotSpan" class="secColor ubuntuFont">.</span>it</a>
+                    </div>
+                    <div id="mottoPDiv" class="row">
+                        <p class="ubuntuFont customBlack fw-bold ps-3">The best place to sell and search</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul id="footerCategoriesList" class="secColor ubuntuFont">
+                        <h6 id="footerCategoriesTitle" class="fw-bold fs-5 pt-4 pb-2">CATEGORIES</h6>
+                        <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
+                            <a id="footerCategoriesListAnchor" href="#">Hot deals</a>
+                            <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                        <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
+                            <a id="footerCategoriesListAnchor" href="#">Laptops</a>
+                            <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                        <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
+                            <a id="footerCategoriesListAnchor" href="#">Smartphones</a>
+                            <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                        <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
+                            <a id="footerCategoriesListAnchor" href="#">Cameras</a>
+                            <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                        <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
+                            <a id="footerCategoriesListAnchor" href="#">Accessories</a>
+                            <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul id="footerInfoList" class="secColor ubuntuFont">
+                        <h6 id="footerInfoTitle" class="fw-bold fs-5 pt-4 pb-2">INFO</h6>
+                        <li id="footerInfoListItem" class="d-flex align-items-center py-1">
+                            <a id="footerInfoListAnchor" href="#">About us</a>
+                            <i id="footerInfoListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                        <li id="footerInfoListItem" class="d-flex align-items-center py-1">
+                            <a id="footerInfoListAnchor" href="#">Contact us</a>
+                            <i id="footerInfoListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                        <li id="footerInfoListItem" class="d-flex align-items-center py-1">
+                            <a id="footerInfoListAnchor" href="#">Privacy policy</a>
+                            <i id="footerInfoListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                        <li id="footerInfoListItem" class="d-flex align-items-center py-1">
+                            <a id="footerInfoListAnchor" href="#">Orders and Returns</a>
+                            <i id="footerInfoListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                        <li id="footerInfoListItem" class="d-flex align-items-center py-1">
+                            <a id="footerInfoListAnchor" href="#">Terms & Conditions</a>
+                            <i id="footerInfoListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 pe-0 px-md-0">
+                    <ul id="footerAppsLinks" class="secColor ubuntuFont px-md-0">
+                        <h6 id="footerAppsLinksTitle" class="fw-bold fs-5 pt-4 pb-2">APPS</h6>
+                        <li id="footerAppsLinksItem" class="d-flex align-items-center py-1">
+                            <a id="footerAppsLinksAnchor" href="#">Google Play
+                            <i id="footerAppsLinksIcon" class="fa-brands fa-google-play ms-2"></i></a>
+                        </li>
+                        <li id="footerAppsLinksItem" class="d-flex align-items-center py-1">
+                            <a id="footerAppsLinksAnchor" href="#">App Store
+                            <i id="footerAppsLinksIcon" class="fa-brands fa-app-store ms-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Easter Egg Toast Message -->

@@ -3,6 +3,8 @@
 // 1- hearts not working (fetch creates them and gets executed after the querySelectorAll)
 // 2- add an initial section with a quick website description
 // 3- change PostYouAdBanner IntersectionObserver ? + add a nice effect
+// 4- fix rotation to icons in list items (footer)
+// 5- merge the searchbars if possible
 
 //Query selectors
 const arrowNavbar = document.querySelector('#arrowNavbar')
@@ -17,6 +19,10 @@ const easterEggToastMessage = document.querySelector('#easterEggToastMessage')
 const newAdsWrapper = document.querySelector('#newAdsWrapper')
 const newAdsRow = document.querySelector('#newAdsRow')
 const postYourAdBanner = document.querySelector('#postYourAdBanner')
+const footerCategoriesListItems = document.querySelectorAll('#footerCategoriesListItem')
+const footerCategoriesListIcons = document.querySelectorAll('#footerCategoriesListIcon')
+const footerInfoListItems = document.querySelectorAll('#footerInfoListItem')
+const footerInfoListIcons = document.querySelectorAll('#footerInfoListIcon')
 
 // Variables
 var easterEggCounter = 0;
@@ -154,6 +160,34 @@ heartBtn.forEach(btn=>{
     btn.addEventListener('click', ()=>{
         btn.classList.toggle('back-sec')
         btn.children[0].classList.toggle('colorWhite')
+    })
+})
+
+footerCategoriesListItems.forEach((li,i)=>{
+    li.addEventListener('mouseenter', ()=>{
+        footerCategoriesListIcons[i].classList.remove('d-none')
+        footerCategoriesListIcons[i].classList.add('d-block')
+    })
+})
+
+footerCategoriesListItems.forEach((li,i)=>{
+    li.addEventListener('mouseleave', ()=>{
+        footerCategoriesListIcons[i].classList.add('d-none')
+        footerCategoriesListIcons[i].classList.remove('d-block')
+    })
+})
+
+footerInfoListItems.forEach((li,i)=>{
+    li.addEventListener('mouseenter', ()=>{
+        footerInfoListIcons[i].classList.remove('d-none')
+        footerInfoListIcons[i].classList.add('d-block')
+    })
+})
+
+footerInfoListItems.forEach((li,i)=>{
+    li.addEventListener('mouseleave', ()=>{
+        footerInfoListIcons[i].classList.add('d-none')
+        footerInfoListIcons[i].classList.remove('d-block')
     })
 })
 
