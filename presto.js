@@ -5,6 +5,7 @@
 // 3- change PostYouAdBanner IntersectionObserver ? + add a nice effect
 // 4- fix rotation to icons in list items (footer)
 // 5- merge the searchbars if possible
+// 6- add a closing button to the PostYouAd banner
 
 //Query selectors
 const arrowNavbar = document.querySelector('#arrowNavbar')
@@ -23,6 +24,7 @@ const footerCategoriesListItems = document.querySelectorAll('#footerCategoriesLi
 const footerCategoriesListIcons = document.querySelectorAll('#footerCategoriesListIcon')
 const footerInfoListItems = document.querySelectorAll('#footerInfoListItem')
 const footerInfoListIcons = document.querySelectorAll('#footerInfoListIcon')
+const closePostYourAdBannerBtn = document.querySelector('#closePostYourAdBannerBtn')
 
 // Variables
 var easterEggCounter = 0;
@@ -189,6 +191,11 @@ footerInfoListItems.forEach((li,i)=>{
         footerInfoListIcons[i].classList.add('d-none')
         footerInfoListIcons[i].classList.remove('d-block')
     })
+})
+
+closePostYourAdBannerBtn.addEventListener('click', ()=>{
+    postYourAdBanner.classList.add('d-none')
+    postYourAdBanner.classList.remove('d-block')
 })
 
 //Functions

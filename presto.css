@@ -230,6 +230,18 @@ a.nav-link:hover{
     height: 22px;
 }
 
+#closePostYourAdBannerBtn{
+    color: var(--custom-black);
+    background: none;
+    border-style: none;
+    position: absolute;
+    right: -6px;
+    bottom: 50px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
 
 /* Presentation section (experiments) */
 /* 
