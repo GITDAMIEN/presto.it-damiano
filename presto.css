@@ -532,6 +532,101 @@ a.nav-link:hover{
 }
 
 
+/* Work with us */
+
+/* Aggiungere sfondo con blob verdi */
+/* Fare un riquadro orange attorno a 'Wanna work with us?' e 'JOIN OUR TEAM' (oppure solo attorno a 'JOIN OUR TEAM'?) */
+/* Aggiungere validations di Bootstrap agli input del form */
+/* Centrare i contenuti (almeno su schermo desktop pieno) */
+/* Aggiungere altra row con iscrizione alla newsletter (magari nel footer?) */
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		-ms-transform:     translateY(-20px);
+		transform:         translateY(-20px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+.bounce_button {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.bounce_button:hover {
+    color: var(--sec-color);
+}
+
+#wannaWorkWithUs{
+    font-size: 22px;
+}
+
+#contactUsFormCard{
+    border-radius: 30px;
+    border: 4px solid var(--sec-color);
+    box-shadow: 1px 1px 10px var(--custom-black);
+    max-width: 400px;
+    position: relative;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#contactUsFormCard:hover{
+    transform: scale(1.03);
+}
+
+#contactUsQuestion{
+    text-align: center;
+}
+
+#contactUsH5{
+    margin: 30px auto;
+}
+
+.form-floating{
+    width: 90%;
+}
+
+#uploadCVBtn{
+    border: 2px solid var(--sec-color);
+    color: var(--custom-black);
+    background-color: transparent;
+    height: 45px;
+    width: 70%;
+    border-radius: 30px;
+    margin: 30px auto 7px auto;
+    transition: 0.2s;
+}
+
+#sendApplicationBtn{
+    border-style: none;
+    color: var(--custom-black);
+    background-color: var(--sec-color);
+    height: 45px;
+    width: 70%;
+    border-radius: 30px;
+    margin: 7px auto 30px auto;
+    transition: 0.2s;
+}
+
+
+#uploadCVBtn:hover, #sendApplicationBtn:hover{
+    transform: scale(1.1);
+}
+
+
 /* Footer */
 
 ul{
@@ -563,6 +658,7 @@ ul{
 
 #footerCategoriesTitle, #footerInfoTitle, #footerAppsLinksTitle{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 1px;
 }
 
 #footerCategoriesList, #footerInfoList, #footerSocialsSection, #footerAppsSection{
@@ -616,6 +712,7 @@ ul{
 
 #footerSocialsTitle{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 1px;
 }
 
 .socialsAnchors{
@@ -657,6 +754,33 @@ ul{
 }
 
 @media screen and (min-width: 768px){
+
+    
+    @keyframes bounce {
+        0%, 100%, 20%, 50%, 80% {
+            -webkit-transform: translateX(0);
+            -ms-transform:     translateX(0);
+            transform:         translateX(0)
+        }
+        40% {
+            -webkit-transform: translateX(-30px);
+            -ms-transform:     translateX(-30px);
+            transform:         translateX(-30px)
+        }
+        60% {
+            -webkit-transform: translateX(-15px);
+            -ms-transform:     translateX(-15px);
+            transform:         translateX(-15px)
+        }
+    }
+
+    .fa-circle-arrow-down{
+        transform: rotate(270deg);
+    }
+    
+    #contactUsQuestion{
+        text-align: end;
+    }
 
     #footerAppsLinksItem{
         font-size: 15px;

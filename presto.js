@@ -1,10 +1,12 @@
 
-//Problems to be solved
+//Problems to be solved / things to implement
 // 1- hearts not working (fetch creates them and gets executed after the querySelectorAll)
-// 2- add an initial section with a quick website description
+// 2- add an initial section with a quick website description and words appearing / disappearing (set interval)
 // 3- change PostYouAdBanner IntersectionObserver ? + add a nice effect
 // 4- fix rotation to icons in list items (footer)
 // 5- merge the searchbars if possible
+// 6- add an offer countdown
+// 7- ads search page
 
 //Query selectors
 const arrowNavbar = document.querySelector('#arrowNavbar')
