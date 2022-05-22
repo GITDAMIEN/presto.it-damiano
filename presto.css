@@ -565,9 +565,13 @@ ul{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-#footerCategoriesList, #footerInfoList, #footerAppsLinks{
+#footerCategoriesList, #footerInfoList, #footerSocialsSection, #footerAppsSection{
     list-style: none;
     padding-left: 16px;
+}
+
+#footerSocialsSection{
+    justify-content: flex-start;
 }
 
 #footerCategoriesListAnchor, #footerInfoListAnchor, #footerAppsLinksAnchor{
@@ -606,6 +610,23 @@ ul{
     transform: rotate(360deg);
 }
 
+.contactsIcons{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#footerSocialsTitle{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.socialsAnchors{
+    text-decoration: none;
+}
+
+.socialsAnchors:hover{
+    color: var(--sec-color)!important;
+}
+
+
 /* Easter Egg Toast message */
 #easterEggToastMessage{
     position: fixed;
@@ -637,12 +658,28 @@ ul{
 
 @media screen and (min-width: 768px){
 
+    #footerAppsLinksItem{
+        font-size: 15px;
+    }
+
+    #footerSocialsSection{
+        justify-content: space-evenly;
+    }
+
     #navbarContainerFluid{
         z-index: 1500;
     }
 }
 
 @media screen and (min-width: 992px){
+
+    #footerAppsLinksItem{
+        font-size: 16px;
+    }
+    
+    #footerSocialsSection{
+        justify-content: flex-start;
+    }
 
     #categoriesSectionContainerFluid{
         background-image: url(/media/Animated\ Shape\ \(1\).svg);
