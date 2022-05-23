@@ -82,7 +82,7 @@ a{
     margin-bottom: 0px;
 }
 
-.form-control:focus, .btn:focus, .navbar-toggler:focus{
+.btn:focus, .navbar-toggler:focus{
     box-shadow: none!important;
 }
 
@@ -534,11 +534,20 @@ a.nav-link:hover{
 
 /* Work with us */
 
-/* Aggiungere sfondo con blob verdi */
-/* Fare un riquadro orange attorno a 'Wanna work with us?' e 'JOIN OUR TEAM' (oppure solo attorno a 'JOIN OUR TEAM'?) */
 /* Aggiungere validations di Bootstrap agli input del form */
-/* Centrare i contenuti (almeno su schermo desktop pieno) */
 /* Aggiungere altra row con iscrizione alla newsletter (magari nel footer?) */
+
+
+#workWithUsContainerFluid{
+    background-image: url(/media/Animated\ Shape\ \(7\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contactUsRow{
+    align-items: center;
+    justify-content: center;
+}
 
 @keyframes bounce {
 	0%, 100%, 20%, 50%, 80% {
@@ -565,10 +574,6 @@ a.nav-link:hover{
     -webkit-animation-iteration-count: infinite;
 }
 
-.bounce_button:hover {
-    color: var(--sec-color);
-}
-
 #wannaWorkWithUs{
     font-size: 22px;
 }
@@ -587,12 +592,25 @@ a.nav-link:hover{
     transform: scale(1.03);
 }
 
-#contactUsQuestion{
+#contactUsLeftPart{
     text-align: center;
+}
+
+#contactUsWords{
+    background-color: var(--sec-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    max-width: 270px;
+    margin: auto;
 }
 
 #contactUsH5{
     margin: 30px auto;
+}
+
+.form-control:focus{
+    box-shadow: none!important;
+    border: 1px solid var(--sec-color)!important;
 }
 
 .form-floating{
@@ -624,6 +642,10 @@ a.nav-link:hover{
 
 #uploadCVBtn:hover, #sendApplicationBtn:hover{
     transform: scale(1.1);
+}
+
+#formArrows{
+    text-shadow: 0px 0px 5px var(--custom-black);
 }
 
 
@@ -774,11 +796,15 @@ ul{
         }
     }
 
+    #contactUsWords{
+        transform: scale(0.9);
+    }
+
     .fa-circle-arrow-down{
         transform: rotate(270deg);
     }
     
-    #contactUsQuestion{
+    #contactUsLeftPart{
         text-align: end;
     }
 
@@ -796,7 +822,12 @@ ul{
 }
 
 @media screen and (min-width: 992px){
-
+    
+    #contactUsWords{
+        transform: scale(1);
+        margin: 0px 20px 0px 65px;
+    }
+    
     #footerAppsLinksItem{
         font-size: 16px;
     }
@@ -804,14 +835,54 @@ ul{
     #footerSocialsSection{
         justify-content: flex-start;
     }
-
+    
     #categoriesSectionContainerFluid{
         background-image: url(/media/Animated\ Shape\ \(1\).svg);
     }
+    
+    #workWithUsContainerFluid{
+        background-image: url(/media/Animated\ Shape\ \(6\).svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
 }
 
 @media screen and (min-width: 1200px){
+
+    #contactUsWords{
+        margin: 0px 20px 0px 130px;
+    }
+
+    #contactUsFormCard{
+        transform: translateX(-35px)
+    }
+
+    #contactUsFormCard:hover{
+        transform: scale(1.03) translateX(-35px);
+    }
+
     .categoriesCards{
         height: 280px;
     }
+}
+
+@media screen and (min-width: 1400px){
+
+    #contactUsWords{
+        margin: 0px 20px 0px 200px;
+    }
+    
+    #contactUsFormCard{
+        transform: translateX(-60px);
+    }
+    
+    #contactUsFormCard:hover{
+        transform: scale(1.03) translateX(-60px);
+    }
+
+    #contactUsLeftPart{
+        transform: translateX(-40px)
+    }
+
 }

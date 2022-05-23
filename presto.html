@@ -265,17 +265,19 @@
     </section>
 
     <!-- Work with us -->
-    <section class="container-fluid d-flex justify-content-center px-0">
+    <section id="workWithUsContainerFluid" class="container-fluid d-flex justify-content-center px-0">
         <div class="container my-5 mx-md-0 px-md-0">
-            <div class="row justify-content-center align-items-center mx-4 mx-md-0">
-                <div id="contactUsQuestion" class="col-12 col-md-5 customBlack ubuntuFont mx-5 mx-md-3 mt-md-4 mt-lg-5">
-                    <p id="wannaWorkWithUs" class="me-md-5">Wanna work with us?</p>
-                    <h5 class="me-md-5 bounce_button fw-bold">JOIN OUR TEAM<i class="fa-solid fa-circle-arrow-down ms-2"></i></h5>
+            <div id="contactUsRow" class="row mx-4 mx-md-0">
+                <div id="contactUsLeftPart" class="col-12 col-md-5 customBlack ubuntuFont mx-5 mx-md-3 mt-md-4 mt-lg-5">
+                    <div id="contactUsWords">
+                        <p id="wannaWorkWithUs" class="">Wanna work with us?</p>
+                        <h5 class="bounce_button fw-bold">JOIN OUR TEAM<i class="fa-solid fa-circle-arrow-down ms-2"></i></h5>
+                    </div>
                     <img src="./media/contactUsOrange.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
                 </div>
                 <div id="contactUsFormCard" class="card col-12 col-md-6 customBlack ubuntuFont text-center d-flex align-items-center mx-3 ms-md-0 me-md-4">
-                    <h5 id="contactUsH5">Fill the application form</h5>
-                    <div class="form-floating">
+                    <h5 id="contactUsH5"><i id="formArrows" class="fa-solid fa-circle-arrow-right me-3 secColor"></i>Fill the application form<i id="formArrows" class="fa-solid fa-circle-arrow-left ms-3 secColor"></i></h5>
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Full name</label>
                     </div>
