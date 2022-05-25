@@ -265,6 +265,9 @@
     </section>
 
     <!-- Work with us -->
+
+
+    <!-- PERCHE' NON FUNZIONA LA VALIDATION ????????????????????????????????????????????????????????????????????????????????????????????????? -->
     <section id="workWithUsContainerFluid" class="container-fluid d-flex justify-content-center px-0">
         <div class="container my-5 mx-md-0 px-md-0">
             <div id="contactUsRow" class="row mx-4 mx-md-0">
@@ -275,23 +278,28 @@
                     </div>
                     <img src="./media/contactUsOrange.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
                 </div>
-                <div id="contactUsFormCard" class="card col-12 col-md-6 customBlack ubuntuFont text-center d-flex align-items-center mx-3 ms-md-0 me-md-4">
+                <form id="contactUsFormCard" class="card col-12 col-md-6 customBlack ubuntuFont text-center d-flex align-items-center mx-3 ms-md-0 me-md-4 needs-validation" action="" method="post" novalidate>
                     <h5 id="contactUsH5"><i id="formArrows" class="fa-solid fa-circle-arrow-right me-3 secColor"></i>Fill the application form<i id="formArrows" class="fa-solid fa-circle-arrow-left ms-3 secColor"></i></h5>
                     <div class="form-floating mb-2">
-                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password" required>
                         <label for="floatingPassword">Full name</label>
+                        <small class="invalid-feedback ps-3">This field is required</small>
                     </div>
                     <div class="form-floating mb-2">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                         <label for="floatingInput">Email address</label>
+                        <small class="invalid-feedback ps-3">Please enter a valid email address</small>
                     </div>
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
                         <label for="floatingTextarea">Message</label>
+                        <small class="invalid-feedback ps-3">This field is required</small>
                     </div>
-                    <button id="uploadCVBtn">Upload your CV</button>
-                    <button id="sendApplicationBtn">Send application</button>
-                </div>
+                    <div class="text-center">
+                        <button id="uploadCVBtn">Upload your CV</button>
+                        <button type="submit" id="sendApplicationBtn" class="btn btn-main">Send application</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -447,7 +455,8 @@
     </div>
     
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     
     <!-- Swiper Js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
