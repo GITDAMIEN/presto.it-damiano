@@ -18,6 +18,7 @@
     
     <!-- My CSS -->
     <link rel="stylesheet" href="./presto.css">
+    <link rel="stylesheet" href="./ads.css">
     <title>Presto.it | All Ads</title>
     <link rel="shortcut icon" href="./media/pLogoNewNew.png" type="image/x-icon">
 </head>
@@ -112,7 +113,7 @@
     </nav>
 
     <!-- Post your ad -->
-    <div id="postYourAdBanner" class="d-none align-items-center">
+    <!-- <div id="postYourAdBanner" class="d-none align-items-center">
         <button id="postYourAdWords" class="back-sec px-3">
             Post your ad on Presto.it
         </button>
@@ -122,7 +123,36 @@
         <button id="closePostYourAdBannerBtn">
             <i class="fa-solid fa-xmark"></i>
         </button>
-    </div>
+    </div> -->
+
+
+    <!-- Search filters -->
+    <section id="searchFiltersContainerFluid" class="container-fluid">
+        <div class="container">
+            <div id="searchFilterRow" class="row m-4">
+                <div id="searchFilterCol" class="col-12 card back-sec py-5">
+                    <div class="row">
+                        <div class="col-3 mx-1">
+                            <label for="searchByNameInput">Search by name</label>
+                            <input id="searchByNameInput" type="text">
+                        </div>
+                        <div class="col-3 mx-1">
+                            <label for="searchByCategoryInput">Search by category</label>
+                            <input id="searchByCategoryInput" type="text">
+                        </div>
+                        <div class="col-4 mx-1">
+                            <label for="searchByPriceInput">Search by price</label>
+                            <div id="searchByPriceInput">
+                                <input type="number">
+                                <input type="number">
+                            </div>
+                        </div>
+                        <button id="searchFilterBtn" class="col-1 mx-1 px-1">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Newsletter -->
