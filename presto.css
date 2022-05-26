@@ -841,7 +841,7 @@ ul{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 90%;
-    max-width: 760px;
+    max-width: 840px;
 }
 
 #searchByNameInput, #searchByCategoryInput, #minInput, #maxInput{
@@ -860,9 +860,8 @@ ul{
 }
 
 #searchFilterBtn:hover{
-    transform: scale(1.1);
+    transform: scale(1.1) ;
 }
-
 
 /* Media query */
 
@@ -885,9 +884,26 @@ ul{
     }
 }
 
+
+@media screen and (min-width: 576px){
+
+    #searchFilterBtnCol{
+        transform: translateX(14px);
+    }
+
+    #searchFilterBtn{
+        width: 80%;
+        transform: translateX(-2px);
+    }
+
+    #searchFilterBtn:hover{
+        transform: scale(1.1) translateX(-2px);
+    }
+    
+}
+
 @media screen and (min-width: 768px){
 
-    
     @keyframes bounce {
         0%, 100%, 20%, 50%, 80% {
             -webkit-transform: translateX(0);
@@ -928,6 +944,19 @@ ul{
 
     #navbarContainerFluid{
         z-index: 1500;
+    }
+
+    #searchFilterBtn{
+        margin: 10px auto 10px auto;
+        transform: translateX(6px);
+    }
+
+    #searchFilterBtn:hover{
+        transform: scale(1.1) translateX(6px);
+    }
+    
+    #searchFilterBtnCol{
+        transform: translateX(0px);
     }
 }
 
