@@ -822,7 +822,10 @@ ul{
 }
 
 
-/* All Ads.html */
+/**//**//**//**//* ADS.HTML *//**//**//**//**/
+
+
+/* Search filters */
 
 #priceSearchRow{
     width: 90%!important;
@@ -841,7 +844,7 @@ ul{
     border-radius: 20px;
     padding: 22px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     width: 90%;
     max-width: 1000px;
 }
@@ -853,7 +856,8 @@ ul{
 
 #searchFilterBtn{
     border-radius: 10px;
-    border: 2px solid var(--custom-black);
+    border: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.445);
     height: 34px;
     padding: 5px;
     margin: 12px auto 8px auto;
@@ -880,6 +884,46 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+
+/* Sort filters */
+
+#sortFiltersContainer{
+    width: 78%;
+    max-width: 940px;
+    border: 2px solid var(--sec-color);
+    border-radius: 0px 0px 20px 20px;
+    transform: translateY(-2px);
+    padding: 18px;
+    margin-bottom: 40px;
+}
+
+#sortFiltersDiv{
+    justify-content: center;
+    padding-top: 18px;
+    width: 100%;
+}
+
+#sortDisplayDiv{
+    width: 100%;
+    justify-content: center;
+}
+
+#sortByOrderDiv{
+    justify-content: center;
+    padding-top: 18px;
+}
+
+#sortSelect{
+    max-width: 200px;
+}
+
+#ulSortFilters{
+    list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+
 /* Media query */
 
 @media screen and (min-width: 480px){
@@ -898,6 +942,21 @@ input::-webkit-inner-spin-button {
 
     #dotSpan{
         font-size: 50px;
+    }
+
+    #sortFiltersDiv{
+        justify-content: flex-end;
+        padding-top: 0px;
+        width: 50%;
+    }
+
+    #sortDisplayDiv{
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    #sortByOrderDiv{
+        justify-content: center;
     }
 }
 
@@ -979,6 +1038,20 @@ input::-webkit-inner-spin-button {
     #priceSearchRow{
         transform: translateX(3px);
     }
+    
+    #sortDisplayDiv, #sortFiltersDiv{
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width: 880px){
+
+    #sortFiltersDiv{
+        justify-content: center;
+        padding-top: 0px;
+    }
+
 }
 
 @media screen and (min-width: 992px){
@@ -1004,6 +1077,19 @@ input::-webkit-inner-spin-button {
         background-image: url(/media/Animated\ Shape\ \(6\).svg);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    
+    #sortFiltersDiv{
+        justify-content: center;
+    }
+
+    
+    #sortDisplayDiv, #sortByOrderDiv{
+        width: 32%;
+    }
+    
+    #sortFiltersDiv{
+        width: auto;
     }
     
 }
