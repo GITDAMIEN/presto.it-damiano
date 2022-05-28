@@ -163,7 +163,7 @@ a.nav-link:hover{
     position: sticky;
     top: 0px;
     overflow: hidden;
-    z-index: 1500;
+    z-index: 2000;
 }
 
 #navbarContainerFluid{
@@ -437,7 +437,7 @@ a.nav-link:hover{
     top: 12px;
     left: 12px;
     /* width: 42px; */
-    z-index: 8000;
+    z-index: 1400;
     border-radius: 8px;
 }
 
@@ -884,6 +884,10 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+#priceLabels{
+    font-size: 15px;
+}
+
 
 /* Sort filters */
 
@@ -921,6 +925,12 @@ input::-webkit-inner-spin-button {
     list-style: none;
     margin-bottom: 0px;
     padding-left: 0px;
+}
+
+.selectedFilter{
+    font-weight: 600;
+    color: var(--custom-black);
+    text-shadow: 1px 1px 2px var(--sec-color);
 }
 
 

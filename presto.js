@@ -6,7 +6,6 @@
 // 4- fix rotation to icons in list items (footer)
 // 5- merge the searchbars if possible
 // 6- add an offer countdown
-// 7- ads search page
 
 //Query selectors
 const arrowNavbar = document.querySelector('#arrowNavbar')
@@ -57,9 +56,9 @@ fetch('./annunci.json')
             newAds.push(obj)
     })
 
-    console.log(newAds);
+    // console.log(newAds);
 
-    // newAdsWrapper.innerHTML=''        // RIATTIVARE !!
+    // newAdsWrapper.innerHTML=''        // RIATTIVARE !!(??)
 
     newAds.forEach(newAd=>{
 
@@ -152,11 +151,11 @@ navLink.forEach(link => {
 })
 
 searchBar.addEventListener('click', ()=>{
-    console.log('ciaoooo sono la searchBar 1');
+    console.log('ciaoooo sono la searchBar 1'); ///ovviamente modificare
 })
 
 searchBar2.addEventListener('click', ()=>{
-    console.log('ciaoooo sono la searchBar 2');
+    console.log('ciaoooo sono la searchBar 2'); ///ovviamente modificare
 })
 
 heartBtn.forEach(btn=>{
