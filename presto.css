@@ -433,21 +433,21 @@ a.nav-link:hover{
 }
 
 .typeBadge{
+    font-size: 13.5px;
     position: absolute;
     top: 12px;
     left: 12px;
-    /* width: 42px; */
     z-index: 1400;
     border-radius: 8px;
 }
 
 .newBadge{
+    font-size: 13.5px;
     position: absolute;
     top: 40px;
     left: 12px;
-    /* width: 42px; */
     background-color: var(--sec-color);
-    z-index: 8000;
+    z-index: 1400;
     border-radius: 8px;
 }
 
