@@ -18,10 +18,12 @@ fetch('./annunci.json')
 .then(response=>response.json())
 .then(data=>{
 
+    // Inserire in una funzione il foreach?? (da lanciare all'interno del fetch)
+
     data.forEach((ad,i)=>{
 
         let adElement = document.createElement('div')
-        adElement.classList.add('col-3', 'm-4')
+        adElement.classList.add('col-12','col-sm-6','col-md-4','col-lg-3', 'm-4', 'd-flex', 'justify-content-center', 'px-0')
 
         if(i>=(data.length-10)){
             adElement.innerHTML=`
